@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <tabbed_widget name="Main Window" parent="main_window">
+  <Tab containers="1" tab_name="Case5 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.483221;0.233781;0.14877;0.134228">
+     <DockArea name="vx, vy, vz ( ms/s ) Kz = 2.0, Kv = 4.0">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="yaw rate ( rad/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error x ( pixels/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-960.000000" left="1791611150.016700" right="1791611153.311800" top="960.000000"/>
+       <limitY max="960" min="-960"/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error y ( pixel/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-540.000000" left="1791611150.016700" right="1791611153.311800" top="540.000000"/>
+       <limitY max="540" min="-540"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="Case61 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.380313;0.286353;0.162192;0.171141">
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="Case62 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.250559;0.249441;0.250559;0.249441">
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-2.680178" left="1791611150.016700" right="1791611153.311800" top="5.030077"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-106.125000" left="1791611150.016700" right="1791611153.311800" top="928.125000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-304.437500" left="1791611150.016700" right="1791611153.311800" top="7.937500"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="Case63 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.385906;0.287472;0.161074;0.165548">
+     <DockArea name="vx, vy, vz ( ms/s ) Kz = 2.0, Kv = 2.0">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="yaw rate ( rad/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error x ( pixels/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error y ( pixel/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="Case64 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.384787;0.272931;0.180089;0.162192">
+     <DockArea name="vx, vy, vz ( ms/s ) Kz = 2.0, Kv = 2.0">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="yaw rate ( rad/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error x ( pixels/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error y ( pixel/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="Case65 full graph">
+   <Container>
+    <DockSplitter count="4" orientation="-" sizes="0.380313;0.289709;0.167785;0.162192">
+     <DockArea name="vx, vy, vz ( ms/s ) Kz = 2.0, Kv = 2.0">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="yaw rate ( rad/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error x ( pixels/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+     <DockArea name="pixel error y ( pixel/s )">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-1.050000" left="1791611150.016700" right="1791611153.311800" top="1.050000"/>
+       <limitY/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <currentTabIndex index="0"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="0"/>
+ <streaming_buffer_size value="5"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <!-- - - - - - - - - - - - - - - -->
+ <Plugins>
+  <plugin ID="DataLoad CSV">
+   <parameters delimiter="0" skip_rows="0" time_axis="time_s"/>
+  </plugin>
+  <plugin ID="DataLoad MCAP"/>
+  <plugin ID="DataLoad ROS2 bags">
+   <use_header_stamp value="false"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value=""/>
+  </plugin>
+  <plugin ID="DataLoad ULog"/>
+  <plugin ID="Foxglove ROS2 Bridge">
+   <foxglove_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:8765" use_timestamp="0">
+    <topics/>
+   </foxglove_client>
+  </plugin>
+  <plugin ID="PlotJuggler Bridge">
+   <websocket_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:9090" use_timestamp="0">
+    <topics/>
+   </websocket_client>
+  </plugin>
+  <plugin ID="ROS2 Topic Subscriber">
+   <use_header_stamp value="false"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value="/px4_1/fmu/out/vehicle_local_position_v1;/px4_2/fmu/out/vehicle_local_position_v1;/vpng_data;/px4_1/fmu/in/trajectory_setpoint;/px4_1/fmu/out/vehicle_global_position"/>
+  </plugin>
+  <plugin ID="UDP Server"/>
+  <plugin ID="WebSocket Server"/>
+  <plugin ID="ZMQ Subscriber"/>
+  <plugin ID="CSV/Parquet Exporter"/>
+  <plugin ID="Fast Fourier Transform"/>
+  <plugin ID="Quaternion to RPY"/>
+  <plugin ID="Reactive Script Editor">
+   <library code="--[[ Helper function to create a series from arrays
+
+ new_series: a series previously created with ScatterXY.new(name)
+ prefix:     prefix of the timeseries, before the index of the array
+ suffix_X:   suffix to complete the name of the series containing the X value. If [nil], use the index of the array.
+ suffix_Y:   suffix to complete the name of the series containing the Y value
+ timestamp:   usually the tracker_time variable
+              
+ Example:
+ 
+ Assuming we have multiple series in the form:
+ 
+   /trajectory/node.{X}/position/x
+   /trajectory/node.{X}/position/y
+   
+ where {N} is the index of the array (integer). We can create a reactive series from the array with:
+ 
+   new_series = ScatterXY.new(&quot;my_trajectory&quot;) 
+   CreateSeriesFromArray( new_series, &quot;/trajectory/node&quot;, &quot;position/x&quot;, &quot;position/y&quot;, tracker_time );
+--]]
+
+function CreateSeriesFromArray( new_series, prefix, suffix_X, suffix_Y, timestamp )
+  
+  --- clear previous values
+  new_series:clear()
+  
+  --- Append points to new_series
+  index = 0
+  while(true) do
+
+    x = index;
+    -- if not nil, get the X coordinate from a series
+    if suffix_X ~= nil then 
+      series_x = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_X) )
+      if series_x == nil then break end
+      x = series_x:atTime(timestamp)	 
+    end
+    
+    series_y = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_Y) )
+    if series_y == nil then break end 
+    y = series_y:atTime(timestamp)
+    
+    new_series:push_back(x,y)
+    index = index+1
+  end
+end
+
+--[[ Similar to the built-in function GetSeriesNames(), but select only the names with a give prefix. --]]
+
+function GetSeriesNamesByPrefix(prefix)
+  -- GetSeriesNames(9 is a built-in function
+  all_names = GetSeriesNames()
+  filtered_names = {}
+  for i, name in ipairs(all_names)  do
+    -- check the prefix
+    if name:find(prefix, 1, #prefix) then
+      table.insert(filtered_names, name);
+    end
+  end
+  return filtered_names
+end
+
+--[[ Modify an existing series, applying offsets to all their X and Y values
+
+ series: an existing timeseries, obtained with TimeseriesView.find(name)
+ delta_x: offset to apply to each x value
+ delta_y: offset to apply to each y value 
+  
+--]]
+
+function ApplyOffsetInPlace(series, delta_x, delta_y)
+  -- use C++ indices, not Lua indices
+  for index=0, series:size()-1 do
+    x,y = series:at(index)
+    series:set(index, x + delta_x, y + delta_y)
+  end
+end
+"/>
+   <scripts/>
+  </plugin>
+  <plugin ID="ROS2 Topic Re-Publisher"/>
+ </Plugins>
+ <!-- - - - - - - - - - - - - - - -->
+ <previouslyLoaded_Datafiles/>
+ <!-- - - - - - - - - - - - - - - -->
+ <customMathEquations/>
+ <snippets/>
+ <colorMaps/>
+ <!-- - - - - - - - - - - - - - - -->
+</root>

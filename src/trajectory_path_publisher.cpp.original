@@ -1,0 +1,75 @@
+// Converts PX4 VehicleLocalPosition (NED) into an accumulated nav_msgs/Path (ENU, frame "map")
+// so the commanded drone's trajectory can be viewed live in rviz2.
+#include <rclcpp/rclcpp.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp>
+#include <nav_msgs/msg/path.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+
+using px4_msgs::msg::VehicleLocalPosition;
+
+class TrajectoryPathPublisher : public rclcpp::Node
+{
+public:
+    TrajectoryPathPublisher() : Node("ct_visualizer_trajectory_path_publisher")
+    {
+        this->declare_parameter<std::string>("px4_namespace", "/px4_1");
+        this->declare_parameter<std::string>("frame_id", "map");
+        this->declare_parameter<int>("max_path_length", 5000);
+
+        std::string ns = this->get_parameter("px4_namespace").as_string();
+        if (!ns.empty() && ns.front() != '/') ns = "/" + ns;
+        while (ns.size() > 1 && ns.back() == '/') ns.pop_back();
+
+        frame_id_ = this->get_parameter("frame_id").as_string();
+        max_path_length_ = this->get_parameter("max_path_length").as_int();
+        path_.header.frame_id = frame_id_;
+
+        path_publisher_ = this->create_publisher<nav_msgs::msg::Path>(ns + "/trajectory_path", 10);
+
+        rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
+        auto qos = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
+
+        local_position_subscription_ = this->create_subscription<VehicleLocalPosition>(
+            ns + "/fmu/out/vehicle_local_position_v1", qos,
+            std::bind(&TrajectoryPathPublisher::local_position_callback, this, std::placeholders::_1));
+
+        RCLCPP_INFO(this->get_logger(),
+            "=== Trajectory path publisher: namespace=%s frame_id=%s ===", ns.c_str(), frame_id_.c_str());
+    }
+
+private:
+    void local_position_callback(const VehicleLocalPosition::SharedPtr msg)
+    {
+        geometry_msgs::msg::PoseStamped pose;
+        pose.header.frame_id = frame_id_;
+        pose.header.stamp = this->get_clock()->now();
+
+        // NED -> ENU: east=y, north=x, up=-z
+        pose.pose.position.x = msg->y;
+        pose.pose.position.y = msg->x;
+        pose.pose.position.z = -msg->z;
+        pose.pose.orientation.w = 1.0;
+
+        path_.poses.push_back(pose);
+        if (max_path_length_ > 0 && static_cast<int>(path_.poses.size()) > max_path_length_) {
+            path_.poses.erase(path_.poses.begin());
+        }
+
+        path_.header.stamp = pose.header.stamp;
+        path_publisher_->publish(path_);
+    }
+
+    std::string frame_id_;
+    int max_path_length_ = 5000;
+    nav_msgs::msg::Path path_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_publisher_;
+    rclcpp::Subscription<VehicleLocalPosition>::SharedPtr local_position_subscription_;
+};
+
+int main(int argc, char *argv[])
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<TrajectoryPathPublisher>());
+    rclcpp::shutdown();
+    return 0;
+}

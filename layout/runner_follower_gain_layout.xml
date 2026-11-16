@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <tabbed_widget name="Main Window" parent="main_window">
+  <Tab containers="1" tab_name="drone1,2 set vel and actual vel">
+   <Container>
+    <DockSplitter count="2" orientation="-" sizes="0.5;0.5">
+     <DockSplitter count="3" orientation="|" sizes="0.336957;0.336957;0.326087">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-5.518181" left="2.699571" right="7.793357" top="0.823491"/>
+        <limitY/>
+        <curve color="#0a0d0e" name="/px4_1/fmu/in/trajectory_setpoint/velocity[0]"/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vx"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-4.023907" left="2.699571" right="7.793357" top="5.636873"/>
+        <limitY/>
+        <curve color="#000000" name="/px4_1/fmu/in/trajectory_setpoint/velocity[1]"/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vy"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-0.024647" left="2.699571" right="7.793357" top="0.034049"/>
+        <limitY/>
+        <curve color="#000000" name="/px4_1/fmu/in/trajectory_setpoint/velocity[2]"/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vz"/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+     <DockSplitter count="3" orientation="|" sizes="0.336957;0.336957;0.326087">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-2.378443" left="2.699571" right="7.793357" top="2.184122"/>
+        <limitY/>
+        <curve color="#000000" name="/px4_2/fmu/in/trajectory_setpoint/velocity[0]"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vx"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-0.366906" left="2.699571" right="7.793357" top="0.168983"/>
+        <limitY/>
+        <curve color="#000000" name="/px4_2/fmu/in/trajectory_setpoint/velocity[1]"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vy"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-2.600547" left="2.699571" right="7.793357" top="1.860750"/>
+        <limitY/>
+        <curve color="#000000" name="/px4_2/fmu/in/trajectory_setpoint/velocity[2]"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vz"/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="drone1,2 vels accels altitudes">
+   <Container>
+    <DockSplitter count="3" orientation="-" sizes="0.318182;0.363636;0.318182">
+     <DockSplitter count="3" orientation="|" sizes="0.336957;0.336957;0.326087">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-5.553255" left="2.793053" right="7.793357" top="2.261557"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vx"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vx"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-4.023907" left="2.793053" right="7.793357" top="5.636873"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vy"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vy"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-2.600547" left="2.793053" right="7.793357" top="1.860750"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/vz"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/vz"/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+     <DockSplitter count="3" orientation="|" sizes="0.336957;0.336957;0.326087">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-5.338959" left="2.793053" right="7.793357" top="4.297251"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/ax"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/ax"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-2.754945" left="2.793053" right="7.793357" top="1.129708"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/ay"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/ay"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-5.873617" left="2.793053" right="7.793357" top="7.344157"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/az"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/az"/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="-7.899935" left="2.793053" right="7.793357" top="-5.896482"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_local_position_v1/z"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_local_position_v1/z"/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="494.244514" left="2.793053" right="7.793357" top="494.292931"/>
+        <limitY/>
+        <curve color="#32d627" name="/px4_1/fmu/out/vehicle_global_position/alt"/>
+        <curve color="#ff7f0e" name="/px4_2/fmu/out/vehicle_global_position/alt"/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="GLOBAL XY">
+   <Container>
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+       <range bottom="47.397899" left="8.546100" right="8.546347" top="47.398069"/>
+       <limitY/>
+       <curve color="#32d627" curve_x="/px4_1/fmu/out/vehicle_global_position/lon" curve_y="/px4_1/fmu/out/vehicle_global_position/lat" name="/px4_1/fmu/out/vehicle_global_position/l[on;at]"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="PNG">
+   <Container>
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockArea name="...">
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-10.000000" left="2.783257" right="7.783020" top="10.000000"/>
+       <limitY max="10" min="-10"/>
+       <curve color="#ff7f0e" name="/vpng_data/yaw"/>
+       <curve color="#000000" name="zero line"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <currentTabIndex index="3"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="1"/>
+ <streaming_buffer_size value="5"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <!-- - - - - - - - - - - - - - - -->
+ <Plugins>
+  <plugin ID="DataLoad CSV">
+   <parameters delimiter="0" skip_rows="0" time_axis=""/>
+  </plugin>
+  <plugin ID="DataLoad MCAP"/>
+  <plugin ID="DataLoad ROS2 bags">
+   <use_header_stamp value="false"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value=""/>
+  </plugin>
+  <plugin ID="DataLoad ULog"/>
+  <plugin ID="Foxglove ROS2 Bridge">
+   <foxglove_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:8765" use_timestamp="0">
+    <topics/>
+   </foxglove_client>
+  </plugin>
+  <plugin ID="PlotJuggler Bridge">
+   <websocket_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:9090" use_timestamp="0">
+    <topics/>
+   </websocket_client>
+  </plugin>
+  <plugin ID="ROS2 Topic Subscriber">
+   <use_header_stamp value="false"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+   <boolean_strings_to_number value="true"/>
+   <remove_suffix_from_strings value="true"/>
+   <selected_topics value="/px4_1/fmu/in/trajectory_setpoint;/px4_1/fmu/out/vehicle_global_position;/px4_1/fmu/out/vehicle_local_position_v1;/px4_2/fmu/out/vehicle_local_position_v1;/vpng_data"/>
+  </plugin>
+  <plugin ID="UDP Server"/>
+  <plugin ID="WebSocket Server"/>
+  <plugin ID="ZMQ Subscriber"/>
+  <plugin ID="CSV/Parquet Exporter"/>
+  <plugin ID="Fast Fourier Transform"/>
+  <plugin ID="Quaternion to RPY"/>
+  <plugin ID="Reactive Script Editor">
+   <library code="--[[ Helper function to create a series from arrays
+
+ new_series: a series previously created with ScatterXY.new(name)
+ prefix:     prefix of the timeseries, before the index of the array
+ suffix_X:   suffix to complete the name of the series containing the X value. If [nil], use the index of the array.
+ suffix_Y:   suffix to complete the name of the series containing the Y value
+ timestamp:   usually the tracker_time variable
+              
+ Example:
+ 
+ Assuming we have multiple series in the form:
+ 
+   /trajectory/node.{X}/position/x
+   /trajectory/node.{X}/position/y
+   
+ where {N} is the index of the array (integer). We can create a reactive series from the array with:
+ 
+   new_series = ScatterXY.new(&quot;my_trajectory&quot;) 
+   CreateSeriesFromArray( new_series, &quot;/trajectory/node&quot;, &quot;position/x&quot;, &quot;position/y&quot;, tracker_time );
+--]]
+
+function CreateSeriesFromArray( new_series, prefix, suffix_X, suffix_Y, timestamp )
+  
+  --- clear previous values
+  new_series:clear()
+  
+  --- Append points to new_series
+  index = 0
+  while(true) do
+
+    x = index;
+    -- if not nil, get the X coordinate from a series
+    if suffix_X ~= nil then 
+      series_x = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_X) )
+      if series_x == nil then break end
+      x = series_x:atTime(timestamp)	 
+    end
+    
+    series_y = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_Y) )
+    if series_y == nil then break end 
+    y = series_y:atTime(timestamp)
+    
+    new_series:push_back(x,y)
+    index = index+1
+  end
+end
+
+--[[ Similar to the built-in function GetSeriesNames(), but select only the names with a give prefix. --]]
+
+function GetSeriesNamesByPrefix(prefix)
+  -- GetSeriesNames(9 is a built-in function
+  all_names = GetSeriesNames()
+  filtered_names = {}
+  for i, name in ipairs(all_names)  do
+    -- check the prefix
+    if name:find(prefix, 1, #prefix) then
+      table.insert(filtered_names, name);
+    end
+  end
+  return filtered_names
+end
+
+--[[ Modify an existing series, applying offsets to all their X and Y values
+
+ series: an existing timeseries, obtained with TimeseriesView.find(name)
+ delta_x: offset to apply to each x value
+ delta_y: offset to apply to each y value 
+  
+--]]
+
+function ApplyOffsetInPlace(series, delta_x, delta_y)
+  -- use C++ indices, not Lua indices
+  for index=0, series:size()-1 do
+    x,y = series:at(index)
+    series:set(index, x + delta_x, y + delta_y)
+  end
+end
+"/>
+   <scripts/>
+  </plugin>
+  <plugin ID="ROS2 Topic Re-Publisher"/>
+ </Plugins>
+ <!-- - - - - - - - - - - - - - - -->
+ <previouslyLoaded_Datafiles/>
+ <previouslyLoaded_Streamer name="ROS2 Topic Subscriber"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <customMathEquations>
+  <snippet language="LUA" name="zero line">
+   <global></global>
+   <function>return 0</function>
+   <linked_source>/vpng_data/yaw</linked_source>
+   <additional_sources>
+    <v1>/vpng_data/yaw</v1>
+   </additional_sources>
+  </snippet>
+ </customMathEquations>
+ <snippets/>
+ <colorMaps/>
+ <!-- - - - - - - - - - - - - - - -->
+</root>
